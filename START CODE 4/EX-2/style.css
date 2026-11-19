@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    background-color: grey;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px;
+    padding-right: 50px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.burger {
+    display: none;
+    font-size: 30px;
+    padding: 20px;
+    padding-right: 30px;
+    border: 0px;
+    background-color: grey;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav {
+        display: none;        
+    }
+}

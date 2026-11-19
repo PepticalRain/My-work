@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+.content {
+    /* never smaller than 300px, 100% in between, never bigger than 800px */
+    width: clamp(300px, 100%, 800px);
+    height: 400px;
+    margin: 0 auto;
+    background-color: rgb(209, 232, 23);
+}

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.small {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: tomato;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.big {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .small {
+        display: none;
+    }
+
+    .big {
+        display: inline-block;
+        padding: 6px 12px;
+        background-color: yellowgreen;
+        color: white;
+        font-family: serif;
+        font-size: 28px;
+    }
+}
